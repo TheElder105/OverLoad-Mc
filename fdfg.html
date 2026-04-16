@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Overload MC | الموقع الرسمي</title>
+    <style>
+        /* تصميم "الأناركي" القوي - كل شيء داخلي 100% */
+        body {
+            margin: 0;
+            background-color: #050505;
+            color: #eee;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* هيدر بتصميم ناري بدون صور خارجية */
+        header {
+            background: linear-gradient(180deg, #331100 0%, #050505 100%);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff4500;
+        }
+
+        header h1 {
+            font-size: 5rem;
+            color: #ff4500;
+            margin: 0;
+            text-shadow: 4px 4px 0px #000;
+            letter-spacing: 5px;
+        }
+
+        /* صندوق المعلومات */
+        .info-box {
+            background: #111;
+            padding: 40px;
+            border: 2px solid #ff4500;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: -60px auto 40px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.9);
+        }
+
+        .ip-text {
+            font-size: 2rem;
+            color: #ffd700;
+            font-weight: bold;
+            display: block;
+            margin: 15px 0;
+        }
+
+        .btn {
+            background: #ff4500;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #e63e00; transform: scale(1.05); }
+
+        /* الأقسام */
+        section { padding: 60px 10%; }
+        h2 { color: #ff4500; font-size: 2.5rem; border-right: 8px solid #ff4500; padding-right: 15px; margin-bottom: 30px; }
+
+        .card {
+            background: #161616;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+        .card h3 { color: #ffd700; margin-top: 0; font-size: 1.8rem; }
+
+        /* فريق العمل */
+        .staff-list { color: #00ccff; font-weight: bold; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OVERLOAD</h1>
+    <p style="font-size: 1.5rem; color: #aaa;">عالم الفوضى والأناركي - البقاء للأقوى</p>
+</header>
+
+<div class="info-box">
+    <div style="color: #00ff00; font-size: 1.2rem; font-weight: bold;">● السيرفر متاح للعب الآن</div>
+    <span class="ip-text">Overloadmc.mcsh.io</span>
+    <button class="btn" onclick="copyIP()">نسخ العنوان ودخول السيرفر</button>
+</div>
+
+<section id="stories">
+    <h2>أساطير أوفر لود</h2>
+    <div class="card">
+        <h3>انفجار الـ Spawn</h3>
+        <p>في أول يوم، تم تدمير منطقة الرسبون بآلاف الـ TNT، ومن هنا بدأت أسطورة السيرفر كأخطر مكان للعيش في الأناركي العربي.</p>
+    </div>
+    <div class="card">
+        <h3>كنز الإحداثيات المفقودة</h3>
+        <p>يقولون أن هناك صندوقاً مخفياً عند إحداثيات (X: 150,000) يحتوي على موارد لا تنتهي.. هل أنت مستعد للرحلة؟</p>
+    </div>
+</section>
+
+<section id="staff">
+    <h2>فريق الإدارة</h2>
+    <div class="card">
+        <p>المدير العام (Owner): <span class="staff-list">The Master</span></p>
+        <p>المطور التقني (Dev): <span class="staff-list">Plugin Wizard</span></p>
+    </div>
+</section>
+
+<section id="rules">
+    <h2>القوانين (الدستور)</h2>
+    <div class="card">
+        <p>1. مسموح بالسرقة والتدمير والحروب.</p>
+        <p>2. يمنع منعاً باتاً استخدام آلات اللاق (Lag Machines).</p>
+        <p>3. الاحترام المتبادل خارج إطار اللعبة.</p>
+    </div>
+</section>
+
+<footer style="padding: 40px; text-align: center; color: #444; background: #000;">
+    Overload MC &copy; 2026
+</footer>
+
+<script>
+    function copyIP() {
+        const temp = document.createElement("input");
+        temp.value = "Overloadmc.mcsh.io";
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        document.body.removeChild(temp);
+        alert("تم نسخ العنوان بنجاح! نراك في السيرفر.");
+    }
+</script>
+
+</body>
+</html>
